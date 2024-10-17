@@ -4,9 +4,9 @@ export class CreateCarDto {
   
   @IsString()
   @MinLength(3)
-  brand: string;
+  readonly brand: string;
   
   @IsString()
   @MinLength(3)
-  model: string;
+  readonly model: string;
 }
